@@ -1,0 +1,48 @@
+{
+  "payload_type": "whatsapp_webhook",
+  "_id": "conv3-msg2-api",
+  "metaData": {
+    "entry": [
+      {
+        "changes": [
+          {
+            "field": "messages",
+            "value": {
+              "messaging_product": "whatsapp",
+              "metadata": {
+                "display_phone_number": "918329446654",
+                "phone_number_id": "629305560276479"
+              },
+              "contacts": [
+                {
+                  "profile": {
+                    "name": "Amit Singh"
+                  },
+                  "wa_id": "918765432109"
+                }
+              ],
+              "messages": [
+                {
+                  "from": "918329446654",
+                  "id": "wamid.HBgMOTE4NzY1NDMyMTA5FQIAEhggMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTE=",
+                  "timestamp": "1754402040",
+                  "text": {
+                    "body": "Good morning Amit! I'd be happy to help you with your order. Could you please provide your order number?"
+                  },
+                  "type": "text"
+                }
+              ]
+            }
+          }
+        ],
+        "id": "30164062719905282"
+      }
+    ],
+    "gs_app_id": "conv3-app",
+    "object": "whatsapp_business_account"
+  },
+  "createdAt": "2025-08-06 12:33:40",
+  "startedAt": "2025-08-06 12:33:40",
+  "completedAt": "2025-08-06 12:33:41",
+  "executed": true
+}
