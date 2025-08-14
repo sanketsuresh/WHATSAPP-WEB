@@ -1,0 +1,48 @@
+{
+  "payload_type": "whatsapp_webhook",
+  "_id": "conv4-msg1-user",
+  "metaData": {
+    "entry": [
+      {
+        "changes": [
+          {
+            "field": "messages",
+            "value": {
+              "contacts": [
+                {
+                  "profile": {
+                    "name": "Priya Sharma"
+                  },
+                  "wa_id": "919812345678"
+                }
+              ],
+              "messages": [
+                {
+                  "from": "919812345678",
+                  "id": "wamid.HBgMOTE5ODEyMzQ1Njc4FQIAEhggUFJJWUExMjM0NTY3ODkwQUJDREVGMTIzNDU2Nzg5MA==",
+                  "timestamp": "1754403000",
+                  "text": {
+                    "body": "Hello! I'm interested in your products. Can you tell me about pricing?"
+                  },
+                  "type": "text"
+                }
+              ],
+              "messaging_product": "whatsapp",
+              "metadata": {
+                "display_phone_number": "918329446654",
+                "phone_number_id": "629305560276479"
+              }
+            }
+          }
+        ],
+        "id": "30164062719905283"
+      }
+    ],
+    "gs_app_id": "conv4-app",
+    "object": "whatsapp_business_account"
+  },
+  "createdAt": "2025-08-06 13:50:00",
+  "startedAt": "2025-08-06 13:50:00",
+  "completedAt": "2025-08-06 13:50:01",
+  "executed": true
+}

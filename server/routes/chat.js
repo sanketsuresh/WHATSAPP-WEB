@@ -50,7 +50,7 @@ router.get('/conversations', async (req, res) => {
       }
     ]);
 
-    console.log(`📊 Found ${conversations.length} conversations`);
+    console.log(`📊 Found ${conversations.length} conversations. Sending:`, conversations);
     res.json(conversations);
   } catch (error) {
     console.error('❌ Error fetching conversations:', error);
@@ -78,7 +78,7 @@ router.get('/conversations/:wa_id/messages', async (req, res) => {
       { status: 'read' }
     );
 
-    console.log(`📨 Found ${messages.length} messages for ${wa_id}`);
+    console.log(`📨 Found ${messages.length} messages for ${wa_id}. Sending:`, messages);
     res.json(messages);
   } catch (error) {
     console.error('❌ Error fetching messages:', error);

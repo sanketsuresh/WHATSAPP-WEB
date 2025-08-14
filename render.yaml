@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: whatsapp-web-clone
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: PORT
+        sync: false
+      - key: FRONTEND_URL
+        value: https://whatsapp-web-clone.onrender.com

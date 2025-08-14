@@ -14,15 +14,15 @@ export default defineConfig(({ mode }) => {
 
     server: {
       port: 5173,
-      strictPort: false, // allows switching to another port if busy
+      strictPort: true, // force to use this port
       proxy: {
         '/api': {
-          target: env.VITE_BACKEND_URL || 'http://localhost:6002',
+          target: env.VITE_BACKEND_URL || 'http://localhost:9000',
           changeOrigin: true,
           secure: false,
         },
         '/socket.io': {
-          target: env.VITE_BACKEND_URL || 'http://localhost:6002',
+          target: env.VITE_BACKEND_URL || 'http://localhost:9000',
           ws: true,
         },
       },

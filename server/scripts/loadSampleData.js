@@ -13,7 +13,7 @@ async function loadData() {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log("✅ MongoDB connected");
 
-    const payloadDir = path.join(__dirname, "server", "payloads");
+    const payloadDir = path.join(__dirname, "server", "config", "payloads");
     const files = fs.readdirSync(payloadDir);
 
     for (const file of files) {

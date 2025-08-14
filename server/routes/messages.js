@@ -10,6 +10,7 @@ const router = express.Router();
 router.get('/', async (req, res) => {
   try {
     const messages = await Message.find().sort({ timestamp: 1 }).lean();
+    console.log(`Fetched all messages:`, messages);
     res.status(200).json(messages);
   } catch (error) {
     console.error('❌ Error fetching messages:', error);
@@ -27,6 +28,7 @@ router.get('/:wa_id', async (req, res) => {
     const messages = await Message.find({ wa_id })
       .sort({ timestamp: 1 })
       .lean();
+    console.log(`Fetched messages for wa_id ${wa_id}:`, messages);
     res.status(200).json(messages);
   } catch (error) {
     console.error('❌ Error fetching messages by wa_id:', error);
